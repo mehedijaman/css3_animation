@@ -1,0 +1,18 @@
+.content-one{
+    height:35px;
+    width:150px;
+    padding-top:15px;
+    text-align: center;
+    background-color: blueviolet;
+    color:white;
+
+    animation-name: animation-one;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animation-one{
+    from { background-color:red;}
+    to{ background-color:green;}
+}

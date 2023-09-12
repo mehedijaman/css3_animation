@@ -1,0 +1,45 @@
+.content-one{
+    height:35px;
+    width:150px;
+    padding-top:15px;
+    text-align: center;
+    background-color: blueviolet;
+    color:white;
+
+    animation-name: animation-one;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+
+@keyframes animation-one{
+    0% { 
+        background-color:red;
+    }
+    25%{ 
+        background-color:green;
+        margin-left:200px;
+        margin-top:0px;
+        background-color:green;
+        transform: rotate(120deg);
+    }
+    50%{ 
+        margin-top:400px;
+        margin-left:200px;
+        background-color:blue;
+        transform:rotate(150deg)
+    }
+    75%{
+        margin-top:400px;
+        margin-left:0px;
+        background-color:brown
+    }
+    100%{
+        margin-left:0px;
+        margin-top:0px;
+        background-color:cyan;
+    }
+
+}

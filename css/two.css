@@ -1,0 +1,26 @@
+.content-one{
+    height:35px;
+    width:150px;
+    padding-top:15px;
+    text-align: center;
+    background-color: blueviolet;
+    color:white;
+
+    animation-name: animation-one;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes animation-one{
+    from { 
+        transform: translateX(0px);
+        background-color:red;
+    }
+    to{ 
+        border-radius: 50%;
+        transform: translateX(100%);
+        background-color:green;
+    }
+}

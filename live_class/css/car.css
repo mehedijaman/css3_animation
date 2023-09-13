@@ -1,0 +1,94 @@
+/* body{
+    background-image: url('/img/road.jpg');
+    
+    animation-name: road-move;
+    animation-duration: 5s;
+} */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.car-container{
+    height: 100vh;
+    background-image: url('/img/road.jpg');
+    background-size: contain;
+
+    /* animation-name: road-move;
+    animation-duration: 5s; */
+}
+
+
+.car{
+    height:100px;
+    margin-top:320px;
+    margin-left:720px;
+    /* position: absolute; */
+
+    animation-name: car-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+
+.wheel1{
+    height: 36px;
+    position: absolute;
+    margin-left: -102px;
+    margin-top: 373px;
+
+    animation-name: wheel-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.wheel2{
+    height: 36px;
+    position: absolute;
+    margin-left: -238px;
+    margin-top:374px;
+
+    animation-name: wheel-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+
+
+
+@keyframes wheel-rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes car-move{
+    from{
+        margin-left:720px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+
+
+@keyframes road-move {
+    from{
+        padding-left:0px;
+    }
+    to{
+        padding-left:100px;
+    }
+}
